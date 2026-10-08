@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Profile</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header class="site-header">
+        <h1>Falak Imran</h1>
+        <nav>
+            <a href="#about">AboutMe</a>  |
+            <a href="#skills">Skills</a>  |
+            <a href="#timeline">Timeline</a>  |
+            <a href="#media">Media</a>  |
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+            <main id="main-content">
+                <article id="about" class="card">
+                    <h2>About Me</h2>
+                    <figure>
+                        <img src="profile.jpg" alt="Photo of Falak Imran" width="180">
+                        <figcaption>That's me!</figcaption>
+                    </figure>
+                    <p>I am currently studying many subjects in the 5th sem of Cs journey in Qarshi University.<br>One of my favourite subject is Digital Marketing.</p>
+                    <blockquote>
+                        <p>"The best way to learn is by building."</p>
+                    </blockquote>
+                </article>
+                        <section id="skills" class="card">
+                        <h2>Skills I'm Building This</h2>   
+                        <ul class="tags">
+                            <li>Planning</li>
+                            <li>Building</li>
+                            <li>Applying</li>
+                            <li>Html Layouts</li>
+                        </ul>
+                        </section>
+                        <section id="timeline" class="card">
+                            <h2>Timeline</h2>
+                            <ol>
+                                <li>Completed Lab 1</li>
+                                <li>Checked Task</li>
+                                <li>Built my Web page</li>
+                            </ol>
+                        </section>
+                            <section id="media" class="card">
+                                <h2>University Clip</h2>
+                                <video controls width="480">
+                                    <source src="campus.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            <section id="contact" class="card">
+                                <h2>Contact Me</h2>
+                                <form id="contact-form">
+                                    <fieldset>
+                                        <legend>Send me a message</legend>
+                                        <label for="name">Name:</label><br>
+                                        <input type="text" id="name" name="name" required><br><br>
+                                        <label for="email">Email:</label><br>
+                                        <input type="email" id="email" name="email" required><br><br>
+                                        <label for="topic">Topic</label>
+                                        <select id="topic" name="topic">
+                                            <option value="general">General</option>
+                                            <option value="feedback">Feedback</option>
+                                            <option value="bug">Report a Bug</option>
+                                        </select>
+                                        <p>Preffered reply method:</p>
+                                        <label><input type="radio" name="reply" value="email" checked>
+                                        Email</label>
+                                        <label><input type="radio" name="reply" value="phone" checked>
+                                        Phone</label>
+                                        <label><input type="checkbox" id="subscribe" name="subscribe"> Subscribe to updates</label>
+                                        <label for="callback-date">Preferred callback date</label>
+                                        <input type="date" id="callback-date" name="callback-date">
+                                        <label for="urgency">Urgency (1 = whenever, 10 = right now)</label>
+                                        <input type="range" id="urgency" name="urgency" min="1" max="10" value="5">
+                                        <label for="message">Message</label>
+                                        <textarea id="message" name="message" rows="4" required minlength="10"></textarea>
+                                        <button type="submit">Send</button>
+                                    </fieldset>
+                                </form>
+                            </section>
+                        </section>
+            </main>
+                <aside class="card fun-fact">
+                    <h3>Fun Fact</h3>
+                    <p>I can easily go to sleep in every lec.</p>
+                </aside>
+    <script src="script.js"></script>
+    <footer>
+        <p>&copy 2026 Falak Imran</p>
+        <p>Built for CIT331</p>
+    </footer>
+</body>
+    </html>
